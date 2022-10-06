@@ -1,0 +1,132 @@
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+:root{
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+.container{
+    padding:0 1.2rem;
+}
+
+/* Header */
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.navigation{
+    background-color: var(--White);
+    padding: 1.5rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.header-close{
+    display: none;
+}
+.nav-container{
+    
+}
+
+.nav-menu{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.active{
+    display: block;
+
+}
+.nav-list{
+    
+}
+.nav-items{
+    list-style: none;
+}
+/* Hero */
+.images{
+    max-width: 100vw;
+    width: 100vw;
+
+}
+.hero-image1{
+    width: 100%;
+    max-width:100%;
+    height: 29rem;
+}
+
+.hero-img{
+    position: absolute;
+    max-width: 100vw;
+    top: -7.5%;
+    z-index: 1;
+}
+
+.text{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+}
+
+.text h1{
+    font-size: 2.7rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--DarkBlue);
+    padding-bottom: 1rem;
+}
+
+.text p{
+    padding-bottom: 2rem;
+    text-align: center;
+    color: var(--GrayishBlue);
+    line-height: 1.7;
+}
+
+.button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.button-cta{
+    width: 50vw;
+    font-weight:bold;
+    color: var(--White);
+    font-size: 1rem;
+    padding: 1rem;
+    background: linear-gradient(90deg, var(--LimeGreen) 0%, var(--BrightCyan)100%);
+    border-radius: 2rem;
+    border: none;
+}
